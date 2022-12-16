@@ -1,0 +1,146 @@
+/*Start Body */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5db0f333;
+  text-align: center;
+}
+body,
+h1,
+h2,
+button,
+input {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  color: steelblue;
+}
+
+/* Change Animate Speed */
+.animate__animated,
+.animate__fadeInDown {
+  --animate-duration: 1.5s;
+}
+/* End Body */
+
+/* Start Change Placeholder to red */
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+.redPlaceholder::placeholder {
+  color: red;
+  text-shadow: 0 0 5px red;
+  opacity: 1; /* Firefox */
+}
+/* Internet Explorer 10-11 */
+.redPlaceholder:-ms-input-placeholder {
+  color: red;
+  text-shadow: 0 0 5px red;
+}
+/* Microsoft Edge */
+.redPlaceholder::-ms-input-placeholder {
+  text-shadow: 0 0 5px red;
+  color: red;
+}
+/* End Change Placeholder to red */
+
+/* Start APP */
+.BGD {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("./Photos/Photo.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.Title {
+  background-color: steelblue;
+}
+.App h1 {
+  padding: 15px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+/* End APP */
+
+/* Start Form */
+.form input,
+.form button {
+  height: 40px;
+  width: 200px;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+}
+
+button {
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  background-color: rgba(88, 164, 250, 0.301);
+  border-radius: 5px;
+  border: 1px solid steelblue;
+}
+
+button:hover {
+  background-color: white;
+}
+
+button:focus,
+input:focus {
+  outline: none !important;
+  border: 1px solid steelblue;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+}
+.post {
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid #666;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.post input {
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+}
+
+.post button {
+  width: 150px;
+  display: inline-block;
+  margin: 5px;
+}
+/* End Form */
+/* Start Media */
+@media screen and (max-width: 760px) {
+  .BGD {
+    background-position: 0 150px;
+  }
+  .App h1 {
+    font-size: 25px;
+  }
+
+  .post {
+    width: 80%;
+  }
+}
+/* End Media */

@@ -33,7 +33,7 @@ function Posts() {
           className={
             alarm
               ? "redPlaceholder animate__animated animate__fadeInDown"
-              : "animate__animated "
+              : "animate__animated animate__fadeInDown"
           }
           type="text"
           value={title}
